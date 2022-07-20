@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>표3</title>
+    <style>
+        td, th{
+            padding: 10px;
+            border:1px solid black;
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1) 칸 합치기 colspan, rowspan 연습
+    https://www.w3schools.com/html/html_table_colspan_rowspan.asp
+    2) 시간표 작성하기 : colspan, rowspan 활용-->
+    <!-- 1) 칸 합치기 연습 -->
+<table style="width:50%">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jack</td>
+    <td>Youth</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>Raven</td>
+    <td>Peter</td>
+    <td>17</td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+<table style="width:50%">
+    <tr>
+      <th>Name</th>
+      <td>John</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Phone</th>
+      <td>424-1579</td>
+    </tr>
+    <tr>
+      <td>421-8794</td>
+    </tr>
+  </table>
+  <!-- --------------------------------------------------------- -->
+  <!-- 2) 시간표 만들어보기 -->
+<br>
+<br>
+<br>
+  <table style="width:70%">
+    <tr>
+        <th style="width:10%" colspan="2" rowspan="2">Time</th>
+        <th colspan="8">Day of the week</th>
+    </tr>
+    <tr>
+        <td>월</td>
+        <td>화</td>
+        <td>수</td>
+        <td>목</td>
+        <td>금</td>
+        <td>토</td>
+    </tr>
+    <tr>
+        <td colspan="2">09:00 - 09:50</td>
+        <td>국어</td>
+        <td>수학</td>
+        <td>과학</td>
+        <td>체육</td>
+        <td>사회</td>
+        <td rowspan="3">동아리</td>
+    </tr>
+    <tr>
+        <td colspan="2">10:00 - 10:50</td>
+        <td>수학</td>
+        <td>영어</td>
+        <td>국어</td>
+        <td>미술</td>
+        <td>음악</td>
+        
+    </tr>
+    <tr>
+        <td colspan="2">11:00 - 11:50</td>
+        <td>사회</td>
+        <td>과학</td>
+        <td>영어</td>
+        <td>사회</td>
+        <td>재량</td>
+    </tr>
+    <tr>
+        <td colspan="2">12:00 - 12:50</td>
+        <td colspan="5">점심</td> 
+    </tr>
+    <tr>
+        <td colspan="2">13:00 - 13:50</td>
+        <td>과학</td>
+        <td>체육</td>
+        <td>수학</td>
+        <td>국어</td>
+        <td>수학</td>
+    </tr><tr>
+        <td colspan="2">14:00 - 14:50</td>
+        <td>영어</td>
+        <td>가정</td>
+        <td>사회</td>
+        <td>수학</td>
+        <td>미술</td>
+    </tr>
+    <tr>
+        <td colspan="2">15:00 - 15:50</td>
+        <td>재량</td>
+        <td>기술</td>
+        <td>진로</td>
+        <td>음악</td>
+        <td>국어</td> 
+    </tr>
+  </table>
+</body>
+</html>
