@@ -1,0 +1,64 @@
+body{
+  background-color: lightgray;
+}
+
+.header{
+  background-color: blue;
+  color: white;
+  padding: 40px 20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: -20px;
+}
+
+ul{
+  /* border: 1px solid blue; */
+  list-style: none;
+  background-color: blueviolet;
+  overflow: hidden;
+  margin: auto;
+  margin-left : -10px;
+  margin-right: -10px;
+}
+
+ul > li {
+  float: left;
+  /* border: 1px solid black; */
+}
+
+/* 위의 border로 영역 확인 : nav, ul 영역이 li 영역보다 작음. */
+ul > li a{
+  display: block;
+  color: aliceblue;
+  padding: 5px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+ul>li a:hover{
+  background-color: black;
+  color: white;
+}
+
+td.A{
+  color: white;
+}
+
+table {
+  border: 2px solid gray;
+  margin: auto; 
+  width: 98%;
+  text-align: center;
+}
+
+td {
+  border: 1px solid gray;
+}
+
+h3 {
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+}
