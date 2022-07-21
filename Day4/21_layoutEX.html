@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: lightyellow;
+}
+
+p.A{
+    background-color: cornflowerblue;
+    padding: 15px;
+    color: white;
+}
+p.B{
+    background-color: lightyellow;
+}
+p {
+    background-color: aqua;
+    padding: 10px;
+}
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(255, 255, 138);
+}
+div.desc {
+    text-align: left;
+    padding-top: -20px;
+}
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(141, 255, 158);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: lightgray;
+  width: 34%;
+  padding: 20px 5px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(255, 255, 138);
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>영국의 이모저모</h1>
+  <p class="B">영국에 대한 잡담 사이트</p>
+</div>
+
+<div class="topnav">
+  <a href="https://www.google.co.kr/travel/entity/key/ChQIp4XkptH-qpMKGggvbS8wMTk4ZxAE?ved=0CAAQ5JsGahcKEwj4udWWt4n5AhUAAAAAHQAAAAAQAw&ts=CAESABoECgIaACoECgAaAA">버킹엄 궁전</a>
+  <a href="https://ko.wikipedia.org/wiki/%EB%B9%85_%EB%B2%A4">빅 벤</a>
+  <a href="https://ko.wikipedia.org/wiki/%EA%B7%B8%EB%A6%AC%EB%8B%88%EC%B9%98_%EC%B2%9C%EB%AC%B8%EB%8C%80">그리니치 천문대</a>
+  <a href="https://search.naver.com/search.naver?where=image&sm=tab_jum&query=%EC%98%81%EA%B5%AD+%EA%B0%A4%EB%9F%AC%EB%A6%AC" style="float:right">갤러리</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>영국의 고기요리</h2>
+      <h5>Title description, Jul 20, 2022</h5>
+      <div class="fakeimg"><a href="https://w.namu.la/s/cf4457bff02a139111d796d51f058f769cd702363e89a721bb5fbddd28db0ddcf6086e0d347ab4b00eb87a31cacef8789c07e5ce321d3a54e8024f144e7f1b9a7f5e700aeedc760908ee737ef76e5c6a08745101709b55dee0a6b1de170a142132882f5d924b6b3b06a8c12fec7f004b"><img src="https://w.namu.la/s/cf4457bff02a139111d796d51f058f769cd702363e89a721bb5fbddd28db0ddcf6086e0d347ab4b00eb87a31cacef8789c07e5ce321d3a54e8024f144e7f1b9a7f5e700aeedc760908ee737ef76e5c6a08745101709b55dee0a6b1de170a142132882f5d924b6b3b06a8c12fec7f004b"  alt="로스트 비프" width="350px;" height="185px;"></a></div>
+      <p class="A"><b>로스트 비프</b></p>
+      <p>영국에서 일요일에 흔히 먹는, 분홍색 살 부분이 골고루 퍼지게 굽는 것이 핵심인 요리. 두툼한 고기 요리이므로 언더쿡이 되더라도 입에 덜 물릴 수 있는 안심이나 채끝 등심을 포함한 서로인 부위가 주로 쓰인다. 요리 전문가들은 프라임 립 (립아이 통고기)를 쓰기도 한다. 등심을 구울 때에 언더쿡이 되면 식감이 깔끔하지 못하고 입에 물릴 수 있어 주의해야 한다.</p>
+    </div>
+    <div class="card">
+      <h2>영국의 티타임</h2>
+      <h5>Title description, Jul 21, 2022</h5>
+      <div class="fakeimg"><a href="https://w.namu.la/s/d8e9de636b0b9bc4be44eb806ed724f85711ac5849ff46f30c01f7a2f5850593c87909db7661688a8e1aaad656ec456732d6e1e8984060bdc4253c5e2d6a66474bbd31bb1159f835d76ebd857140750ef2b76c5d44233aff37b9bf132d5fbd72"><img src="https://w.namu.la/s/d8e9de636b0b9bc4be44eb806ed724f85711ac5849ff46f30c01f7a2f5850593c87909db7661688a8e1aaad656ec456732d6e1e8984060bdc4253c5e2d6a66474bbd31bb1159f835d76ebd857140750ef2b76c5d44233aff37b9bf132d5fbd72" alt="티타임" width="350px;" height="185px;"></a></div>
+      <p class="A"><b>바빠도 티타임은 꼭 챙긴다!</b></p>
+      <p>영국인들은 전쟁도 티타임이 끝난 후에 한다는 우스갯소리가 있을 정도로 영국에서는 티타임이 유명한 편이다.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h1>영국의 국기</h1>
+      <div><img src="https://w.namu.la/s/efeda0494c58894d239525a23f02d68ed6618857e6ea60897f4ce49be92ec7e0ac314d888a459673d9ef7f8bd78db98d9bfc6cf20db6e6427fb85827154dfa7828533f151a869ceb6e4bc0f5b1756b7037f12b447cec63ffedb391f12887188b" width="300px;" height="200px;"></a></div>
+      <p>통칭 <b style="color: blue;">유니온 잭</b>. 잉글랜드, 스코틀랜드, 북아일랜드의 국기를 합쳐 만들어진 영국의 국기다.</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post (이미지 클릭)</h3>
+      <div><p><a target="_blank" href="https://ko.wikipedia.org/wiki/2%EC%B8%B5_%EB%B2%84%EC%8A%A4"><img src="https://w.namu.la/s/782f3ab610ee74150b5b1d67167e70ed1c053ea43e856f31de3ca5e3b270aa9de33146a318ae8ee4bb024162f1b34f9f90fe0cd23b51ccc1f57c8dc1fb0defc49cfd9386841216dc5b82441b01a215fe96f58aef3dbb0534df30c0588962cab9" width="185px;" height="100px;"></a></p><div class="desc">영국의 2층버스</div></div>
+
+      <div><p><a target="_blank" href="https://ko.wikipedia.org/wiki/%EC%97%98%EB%A6%AC%EC%9E%90%EB%B2%A0%EC%8A%A4_2%EC%84%B8"><img src="https://w.namu.la/s/50491f552eaed67798715987f0bd35417ec17b5d4bd5152852659aa17ac6eefaedfb1306c20d661106fd8a58ed4f4306041a46f232d81cf538df58a9b76a480c3bea855ec0ed5446ac7e7cb4684f3cf33ad01d7ed1608c67ee193e6a4e2d9866d98c7be1eebc1c3aaeaf4d61b445770f" width="185px;" height="100px;"></a></p><div class="desc">엘리자베스 2세</div></div>
+      
+      <div><p><a target="_blank" href="https://www.wishbeen.co.kr/spot/a7ec3fe223352891"><img src="https://w.namu.la/s/21cf85e8c85de6506ec32abf4766d769faf3e37666803a66565dfef326d8bba455624b304c65bed53fec9d79f5f7eb618bf5353559a0c1906ad4376762ac317f2c0c20a4e45ec8d8ae61c901989c1634d0e97576faf51bf44e33e69251e821c2" width="185px;" height="100px;"></a></p><div class="desc">킹스크로스역</div></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>E-Mail : myhy0428@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>2022/07/20 KoreaItAcademy</h2>
+</div>
+
+</body>
+</html>

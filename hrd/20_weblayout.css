@@ -1,17 +1,16 @@
-.header{   
-    background-color: cadetblue;
+header{
+    background-color: blue;
     color: white;
     padding: 40px 20px;
     margin-left: -10px;
     margin-top: -20px;
 }
- /* . = 클래스 뜻함 */
 
 h3{
     text-align: center;
 }
 
-.nav{
+nav{
     
 }
 body{
@@ -20,7 +19,7 @@ body{
 ul{
     /* border: 1px solid blue; */
     list-style: none;
-    background-color: brown;
+    background-color:blueviolet;
     overflow: hidden;
     margin: auto;
     margin-left : -10px;
@@ -41,13 +40,20 @@ ul>li a:hover{
     background-color: black;
     color: white;
 }
-.main{
+/* ul 태그 1개일때만 이렇게 작성하세요. 마지막 li 태그 스타일 */
+ul > li:last-child{
+    float:right;
+    margin-left: 20px;
+}
+
+main{
     background-color: azure;
     padding: 20px;
     height: 500px;
     margin-left : -10px;
 }
-.footer{
+
+footer{
     background-color: cornflowerblue;
     color: white;
     padding: 20px;

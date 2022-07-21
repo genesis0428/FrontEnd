@@ -1,0 +1,14 @@
+h3{
+    text-align: center;
+}
+
+table {
+    border: 2px solid gray;
+    margin: auto;
+    width: 600px;
+    text-align: center;
+  }
+  
+  td {
+    border: 1px solid gray;
+  }
