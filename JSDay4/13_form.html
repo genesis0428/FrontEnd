@@ -5,8 +5,11 @@
     <title>Day3_폼form</title>
     <!-- href 속성값은 http url 또는 로컬 파일명 -->
     <link rel="stylesheet" href="13_member.css">
+    <script src="14_members.js"></script>
+    <link rel="shortcut icon" href="#">
 </head>
 <body>
+    
     <!-- 사용자 입력을 처리하는 form 작성 (form, 양식)
         form 태그 내에 입력요소 태그(input,button,select...)들을 포함시켜서 작성해야 합니다.
         작성완료도니 입력을 서버로 전달합니다.
@@ -30,6 +33,7 @@
             <tr>
                 <td><label for="lblemail" class="title mpt">이메일</label></td>
                 <td><input type="email" name="email" id="lblemail"></td>
+                <!-- type이 email이면 @ 기호 필수 입력 button 이 submit일 때만 동작 -->
             </tr>
             <tr>
                 <td><label for="lblage" class="title mpt">나이</label></td>
@@ -86,8 +90,8 @@
                     <input type="submit" value="제출">
                     <input type="reset" value="초기화">
                     -->
-                    <!-- button은 기본동작이 submit -->
-                    <button>가입하기</button>
+                    <!-- button은 기본동작이 submit : 유효성 검사를 위해 type 변경 -->
+                    <button onclick="valid_check()" type="button">가입하기</button>
                     <button type="reset">다시쓰기</button>
                 </td>
             </tr>
@@ -105,6 +109,3 @@
     -->
     </body>
 </html>
-
-
-
